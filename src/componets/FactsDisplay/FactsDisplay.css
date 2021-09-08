@@ -1,0 +1,134 @@
+.subMenu {
+    transition-timing-function: ease-out;
+    transition: 0.35s;
+    position: absolute;
+    top: 65px;
+    left:0;
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0px;
+    padding: 0;
+    width: 100%;
+    border-bottom: 1px solid var(--color-darkest);
+}
+.active-menu {
+    transition-timing-function: ease-in;
+    transition: 0.35s;
+    top: 376px!important;
+}
+.subMenu li {
+    display: inline-block;
+    margin-left: 0px;
+    text-align: center;
+    width: 100%;
+    margin: 0 15px;
+}
+.active p {
+    color: var(--color-primary);
+}
+.subMenu li p {
+    color: var(--color-medium);
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 9px;
+    line-height: 12px;
+    margin-bottom: 10px;
+}
+.subMenu li:hover p, .active-btn p {
+    color: var(--color-primary)!important;
+}
+.subMenu li:hover, .active-btn {
+    cursor: pointer;
+    border-bottom: 3px solid var(--color-planet);
+}
+.facts img {
+    max-width: 50%;
+    margin-bottom: 40px;
+}
+.facts .saturn-img {
+    max-width: 63%;
+}
+.saturn3 .saturn-img {
+    max-width: 80%;
+}
+.wiki span {
+    color: var(--color-medium);
+}
+.planet-info {
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+@media (min-width: 768px) {
+    h1 {
+        font-size: 55px;
+    }
+    .subMenu {
+        position: static;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        border-bottom: none;
+        flex-basis: 45%;
+    }
+    .active-menu {
+        top: auto!important;
+    }
+    .subMenu li {
+        display: block;
+        margin: 4px 0px;
+        text-align: left;
+        padding: 12px 20px;
+        border: 1px solid var(--color-darkest);
+    }
+    .subMenu li p {
+        color: var(--color-light);
+        font-weight: 900;
+        margin:0;
+        padding:0;
+    }    
+    .subMenu li:hover, .active-btn {
+        background-color:var(--color-planet);
+        border-bottom: 1px solid var(--color-darkest);
+    }
+    .subMenu li:hover p, .active-btn p {
+        color: var(--color-primary)!important;
+    }
+    .facts img {
+        max-height: 250px;
+    }
+    .planet-info {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align:left;
+    }
+    .planet-description {
+        display: flex;
+        flex-direction: column;
+        flex-basis: 45%;
+    }
+}
+@media (min-width: 992px) {
+    h1 {
+        font-size: 70px;
+        margin-bottom: 0;
+    }
+    .facts img {
+        max-height: 380px;
+        margin-bottom: 0;
+    }
+    .saturn3 .saturn-img {
+        max-width: 420px;
+    }    
+    .planet-info {
+        align-items: center;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .wiki {
+        margin: 5px 0 15px 0;
+    }    
+}

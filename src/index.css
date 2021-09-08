@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@300;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap');
+html {
+  --color-mercury: #7B9186;
+  --color-venus: #CD9B66;
+  --color-earth: #623CCD;
+  --color-mars: #EA5F4C;
+  --color-jupiter: #D27140;
+  --color-saturn: #E09B7F;
+  --color-uranus: #54B9C3;
+  --color-neptune: #2959C9;
+  
+  --color-planet: #000;
+  --color-primary: white;
+  --color-darkest: #23223F;
+  --color-medium: #87879D;
+  --color-light: #D2D3E7;
+  --color-purple: #702DD5;
+  background-color: #060525;
+}
+body {
+  margin: 0;
+  font-family: 'Teko', sans-serif;
+  font-size: 13px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-image: url('./img/bg.jpg');
+  background-repeat:repeat;
+  color: var(--color-medium);
+  min-height: 100vh;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+i {
+  color: var(--color-primary);
+}
+h1 {
+  text-align: center;
+  font-size: 45px;
+  text-transform: uppercase;
+} 
+p,
+a {
+  color: var(--color-light);
+  font-family: 'Lato', sans-serif;
+}
+p {
+  line-height: 20px;
+}
+a {
+  font-weight: bold;
+}
+a:hover {
+  color: var(--color-primary);
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  h1 {
+      text-align: left;
+  } 
+}

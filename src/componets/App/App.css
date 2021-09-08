@@ -1,0 +1,113 @@
+.app {
+    margin: 0 auto 40px auto;
+}
+.navbar {
+    padding: 0 10px;
+    border-bottom: 1px solid var(--color-darkest);
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: var(--color-primary);
+}
+.navbar .navbar-brand {
+    font-family: 'Teko', sans-serif;
+    font-size: 28px;
+    font-weight: normal;
+}
+.navbar-dark .navbar-toggler {
+    color: rgba(255,255,255,1);
+    border: none; 
+}
+.navbar-nav {
+    padding: 10px 0 20px 0;
+}
+.navbar-nav .nav-link {
+    text-transform: uppercase;
+    font-size: 13px;
+}
+.navbar .active-link::after {
+    display: inline-block;
+    margin-left:10px;
+    content: '';
+    width: 10px;
+    height:10px;
+    border-radius: 50%;;
+    background-color: var(--color-planet);
+}
+
+@media (min-width: 768px) {
+    .navbar {
+        margin-top: 20px;
+    }    
+    .app .container-fluid {
+        display: flex;
+        flex-direction: column;
+    }
+    .navbar .navbar-brand {
+        text-align: center;
+        width: 100%;
+    }
+    .navbar-collapse {
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .navbar .active-link::after {
+        display: none;
+        margin-left:0;
+        content: none;
+        width: 0;
+        height:0;
+    }
+    .navbar .nav-link {
+        margin: 0 5px;
+        font-size: 11px;
+    }
+    .navbar .active-link {
+        border-bottom: 3px solid var(--color-planet);
+    }
+    .mercury:hover {
+        border-bottom: 3px solid var(--color-mercury);
+    }    
+    .venus:hover {
+        border-bottom: 3px solid var(--color-venus);
+    }    
+    .earth:hover {
+        border-bottom: 3px solid var(--color-earth);
+    }    
+    .jupiter:hover {
+        border-bottom: 3px solid var(--color-jupiter);
+    }    
+    .saturn:hover {
+        border-bottom: 3px solid var(--color-saturn);
+    }    
+    .mars:hover {
+        border-bottom: 3px solid var(--color-mars);
+    }    
+    .uranus:hover {
+        border-bottom: 3px solid var(--color-uranus);
+    }    
+    .neptune:hover {
+        border-bottom: 3px solid var(--color-neptune);
+    }    
+}
+@media (min-width: 992px) {
+    .navbar {
+        margin-top: 0;
+    }    
+    .app .container-fluid {
+        flex-direction: row;
+        align-items:center;
+    }
+    .navbar .navbar-brand {
+        text-align: left;
+    }
+    .navbar-collapse {
+        padding-top:7px;
+        text-align: right;
+        justify-content: flex-end;
+    }
+    .app {
+        max-width: 1275px;
+    }
+}
+    

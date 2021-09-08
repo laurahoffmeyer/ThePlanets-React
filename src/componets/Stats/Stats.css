@@ -1,0 +1,37 @@
+.stats {
+    margin:15px auto 0 auto;
+}
+.stat-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid var(--color-darkest);
+    margin: 7px 0;
+    padding: 10px 15px;
+    text-transform: uppercase;
+}
+.stat-item span {
+    color: var(--color-medium);
+    font-family: 'Lato', sans-serif;
+    font-size: 11px;
+    letter-spacing: 1px;
+}
+.stat-item h4 {
+    color: var(--color-primary);
+    font-size: 30px;
+    margin: 0;
+    padding:0;
+}
+.stat-item sup {
+    top:-.2em;
+}
+
+@media (min-width: 768px) {
+    .stat-item {
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+        align-items: flex-start;
+    }
+
+}
