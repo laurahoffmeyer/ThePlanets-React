@@ -15,8 +15,9 @@ function App() {
   useEffect(() => {
     localStorage.setItem('planet', planet)
   }, [planet])
-
+  
   const {data, loading, error} = usePlanet(planet);
+  console.log(data);
 
   return (
     <div style={{'--color-planet': planets[planet]}} className="app">
