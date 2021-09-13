@@ -1,0 +1,19 @@
+.app {
+    margin: 0 auto 40px auto;
+}
+
+@media (min-width: 768px) {
+    .app .container-fluid {
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width: 992px) {
+    .app .container-fluid {
+        flex-direction: row;
+        align-items:center;
+    }
+    .app {
+        max-width: 1275px;
+    }
+}

@@ -6,7 +6,7 @@ function PlanetDisplay(props) {
 
   return (
     <div className="planetDisplay">
-        <FactsDisplay planetInfo={props.planetInfo} menuState={props.menuState}></FactsDisplay>
+        <FactsDisplay planet={props.planet} planetInfo={props.planetInfo} menuState={props.menuState}></FactsDisplay>
         <Stats planetInfo={props.planetInfo}></Stats>
     </div>
   );

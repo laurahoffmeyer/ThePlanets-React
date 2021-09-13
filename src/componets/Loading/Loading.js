@@ -4,7 +4,7 @@ import loadingJSON from '../../img/loading3.json';
 import Container from 'react-bootstrap/esm/Container';
 
 const Loading = () => {
-
+  
   return (
     <Container className="loading">
         <Lottie

@@ -24,13 +24,5 @@ export const usePlanet = (planet) => {
         getPlanetData();
     }, [planet, setData]);
 
-    // headers: {
-    //     'Access-Control-Allow-Origin': '*',
-    //     'Content-Type': 'application/json',
-    //     'Authorization': key,
-    //     withCredentials: true,
-    //     mode: 'no-cors',
-    //   }
-
     return {data, loading, error};
 }

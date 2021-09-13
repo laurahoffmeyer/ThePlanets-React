@@ -10,7 +10,7 @@ import Loading from '../Loading/Loading'
 function FactsMenu(props) {
 
   const [layer, setLayer] = useState('');
-  let currentPlanet = props.planetInfo.englishName ? props.planetInfo.englishName.toLowerCase() : '';
+  let currentPlanet = props.planet ? props.planet.toLowerCase() : '';
   const {overview, pageURL, loading, error} = useWikiData(currentPlanet);
 
   return (

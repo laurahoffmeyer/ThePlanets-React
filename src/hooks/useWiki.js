@@ -11,8 +11,6 @@ export const useWikiData = (planet) => {
     const [loading, setLoading] = useState();
     const [error, setError] = useState();
 
-    let myPage = '';
-    let myID = '';
     let pageURL = `https://en.wikipedia.org/wiki/${planet}`;
 
     useEffect(() => {
@@ -21,9 +19,7 @@ export const useWikiData = (planet) => {
             .then((response) => {
                 setLoading(true);
                 setError(null);
-                myPage = response.data.query.pages;
-                myID = myPage[Object.keys(myPage)[0]].extract;
-                setOverview(myID)
+                setOverview(response.data.query.pages[Object.keys(response.data.query.pages)[0]].extract);
                 setLoading(false);
             }).catch((error) => { 
                 console.log('error', error);
